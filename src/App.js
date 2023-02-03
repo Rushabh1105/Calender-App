@@ -1,5 +1,6 @@
 import './App.css';
 import React, {  } from 'react';
+import Calender from './Components/Calender';
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Calculator</h1>
+      <Calender />
     </div>
   );
 }
