@@ -1,6 +1,8 @@
 import './App.css';
 import React, {  } from 'react';
 import Calender from './Components/Calender';
+import store from './Store/Store';
+import { Provider } from 'react-redux'
 
 function App() {
 
@@ -10,7 +12,9 @@ function App() {
 
   return (
     <div className="App">
-      <Calender />
+      <Provider store={store} >
+        <Calender />
+      </Provider>
     </div>
   );
 }
